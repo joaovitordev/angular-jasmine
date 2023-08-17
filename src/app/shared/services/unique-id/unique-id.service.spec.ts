@@ -8,6 +8,7 @@ describe(UniqueIdService.name, () => {
     service = new UniqueIdService();
   });
 
+  // verifica o criacao
   it(`#${UniqueIdService.prototype.getNumberOfGeneratedUniqueIds.name}
     should return the number of generatedIds when called`, () => {
     service.generateUniqueIdWithPrefix('app');
@@ -15,12 +16,14 @@ describe(UniqueIdService.name, () => {
     expect(service.getNumberOfGeneratedUniqueIds()).toBe(2);
   });
 
+  // verifica se o inicio comeca com o prefixo expecifico
   it(`#${UniqueIdService.prototype.generateUniqueIdWithPrefix.name}
     should generate id when called with prefix`, () => {
     const id = service.generateUniqueIdWithPrefix('app');
     expect(id.startsWith('app-')).toBeTrue();
   });
 
+  // verifica se criou ids duplicados
   it(`#${UniqueIdService.prototype.generateUniqueIdWithPrefix.name}
     should not generate duplicate IDs when called multiple times`, () => {
     const ids = new Set();
