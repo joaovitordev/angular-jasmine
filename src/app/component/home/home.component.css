@@ -1,0 +1,20 @@
+.container {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+}
+
+.list {
+  width: 15%;
+}
+
+.historico {
+  width: 85%;
+}
+
+.mdc-list-item__content {
+  display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}

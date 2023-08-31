@@ -1,0 +1,31 @@
+<section class="container">
+  <mat-list class="list">
+    <mat-list-item *ngFor="let message of messages">
+      <img matListItemAvatar src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="...">
+      <h3 matListItemTitle>{{message.from}}</h3>
+      <p matListItemLine>
+        <span>{{message.subject}}</span>
+        <span class="demo-2"> -- {{message.content}}</span>
+      </p>
+    </mat-list-item>
+  </mat-list>
+
+  <mat-card class="historico">
+      <mat-card-header>
+          <mat-card-title>Title</mat-card-title>
+          <mat-card-subtitle>Subtitle</mat-card-subtitle>
+      </mat-card-header>
+      <img matCardImage src="Card wide image source">
+      <mat-card-content>
+          Text content
+      </mat-card-content>
+      <mat-card-actions align="start">
+          <button mat-button>Action1</button>
+
+      </mat-card-actions>
+      <mat-card-footer>
+          Footer
+      </mat-card-footer>
+  </mat-card>
+
+</section>

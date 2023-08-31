@@ -1,0 +1,159 @@
+<!--
+<mat-card class="card-class">
+    <mat-card-header>
+        <mat-card-title>Nihira Techiees</mat-card-title>
+        <mat-card-subtitle>Angular 15 - Material UI</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-sm-image src="https://angular.io/assets/images/logos/angular/angular.svg"/>
+    <mat-card-content>
+        <p>
+            Angular is an application-design framework and development platform for creating efficient and sophisticated single-page apps.
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button><mat-icon>thumb_up</mat-icon> Like</button>
+        <button mat-button><mat-icon>share</mat-icon> Share</button>
+    </mat-card-actions>
+    <mat-card-footer></mat-card-footer>
+</mat-card>
+
+<mat-card class="card-class">
+    <mat-card-header>
+        <mat-card-title>Nihira Techiees</mat-card-title>
+        <mat-card-subtitle>Angular 15 - Material UI</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-md-image src="https://angular.io/assets/images/logos/angular/angular.svg"/>
+    <mat-card-content>
+        <p>
+            Angular is an application-design framework and development platform for creating efficient and sophisticated single-page apps.
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button><mat-icon>thumb_up</mat-icon> Like</button>
+        <button mat-button><mat-icon>share</mat-icon> Share</button>
+    </mat-card-actions>
+    <mat-card-footer></mat-card-footer>
+</mat-card>
+
+<mat-card class="card-class">
+    <mat-card-header>
+        <mat-card-title>Nihira Techiees</mat-card-title>
+        <mat-card-subtitle>Angular 15 - Material UI</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-lg-image src="https://angular.io/assets/images/logos/angular/angular.svg"/>
+    <mat-card-content>
+        <p>
+            Angular is an application-design framework and development platform for creating efficient and sophisticated single-page apps.
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button><mat-icon>thumb_up</mat-icon> Like</button>
+        <button mat-button><mat-icon>share</mat-icon> Share</button>
+    </mat-card-actions>
+    <mat-card-footer></mat-card-footer>
+</mat-card>
+
+<br>
+<mat-card class="card-class">
+    <mat-card-header>
+        <mat-card-title>Nihira Techiees</mat-card-title>
+        <mat-card-subtitle>Angular 15 - Material UI</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://angular.io/assets/images/logos/angular/angular.svg"/>
+    <mat-card-content>
+        <p>
+            Angular is an application-design framework and development platform for creating efficient and sophisticated single-page apps.
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button><mat-icon>thumb_up</mat-icon> Like</button>
+        <button mat-button><mat-icon>share</mat-icon> Share</button>
+    </mat-card-actions>
+    <mat-card-footer></mat-card-footer>
+</mat-card> -->
+
+<section class="header">
+  <section class="header-title">
+    <h1>ai headline generator</h1>
+    <p>preencha as informações e comece a gerar headlines criativas</p>
+  </section>
+  <button mat-button (click)="ocultarDiv1()">Ocultar formulário</button>
+</section>
+
+<section class="container">
+  <mat-card class="form" *ngIf="div1Oculta">
+      <mat-form-field appearance="outline">
+        <mat-label>Nome da marca</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Descrição da marca</mat-label>
+        <textarea matInput></textarea>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Objetivo da campanha</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Lugares onde vai passar o anúncio</mat-label>
+        <mat-select>
+          <mat-option value="one">First option</mat-option>
+          <mat-option value="two">Second option</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Foco da campanha</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <div [ngClass]="div1Oculta ? 'chat' : 'chat-active'">
+        <mat-form-field appearance="outline">
+          <mat-label>Quantidade de frases</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Max de palavras por frase</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Hora do dia que vai passar</mat-label>
+          <mat-select>
+            <mat-option value="one">First option</mat-option>
+            <mat-option value="two">Second option</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Tom</mat-label>
+          <mat-select>
+            <mat-option value="one">First option</mat-option>
+            <mat-option value="two">Second option</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <button mat-raised-button color="primary">Gerar</button>
+
+  </mat-card>
+
+  <mat-card class="chat">
+      <mat-card-header>
+          <mat-card-title>Title</mat-card-title>
+          <mat-card-subtitle>Subtitle</mat-card-subtitle>
+      </mat-card-header>
+      <img matCardImage src="Card wide image source">
+      <mat-card-content>
+          Text content
+      </mat-card-content>
+      <mat-card-actions align="start">
+          <button mat-button>Action1</button>
+
+      </mat-card-actions>
+      <mat-card-footer>
+          Footer
+      </mat-card-footer>
+  </mat-card>
+
+</section>
